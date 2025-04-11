@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>NeuroCephalopodEye</title>
+  <link rel="icon" type="image/x-icon" href="static/images/octopus_7591652.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,21 +52,20 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Seeing like a Cephalopod: Colour Vision with a Monochrome Event Camera</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://samiarja.com/" target="_blank">Sami Arja</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  Nimrod Kruger, </span> Alexandre Marcireau, </span> Nicholas Owen Ralph, </span> Saeed Afshar and Gregory Cohen
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Western Sydney University<br>Accepted at <a href="https://tub-rip.github.io/eventvision2025/" target="_blank">CVPR 2025 Workshop on Event-based Vision
+                    </a></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>s.elarja@westernsydney.edu.au</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -95,7 +94,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/samiarja/OctoEye" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -123,24 +122,37 @@
 </section>
 
 
+<section class="tldr">
+  <div class="container is-max-desktop">
+    <p>
+      <strong>TL;DR:</strong> 
+      This paper shows that using a monochrome event camera and a ball lens, enable colour-from-focus on the visible and near infrared wavelengths just like the cephalopod is hypothesized to do​. Thanks to chromatic aberration produced by the ball lens.
+    </p>
+  </div>
+</section>
+<br>
+
+
+
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
+        <img src="static/images/teaser_figure_pp.png" alt="MY ALT TEXT"/>
       </video>
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
-</section>
-<!-- End teaser video -->
+</section> -->
 
-<!-- Paper abstract -->
+<div style="text-align: center;">
+  <img src="static/images/teaser_figure_pp.png" alt="MY ALT TEXT" style="width: 1000px; height: auto;" />
+</div>
+
+
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -148,111 +160,280 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Cephalopods exhibit unique colour discrimination
+            capabilities despite having one type of photoreceptors,
+            relying instead on chromatic aberration induced by their
+            ocular optics and pupil shapes to perceive spectral in-
+            formation. We took inspiration from this biological
+            mechanism to design a spectral imaging system that
+            combines a ball lens with an event-based camera. Our
+            approach relies on a motorised system that shifts the
+            focal position, mirroring the adaptive lens motion in
+            cephalopods. This approach has enabled us to achieve
+            wavelength-dependent focusing across the visible light
+            and near-infrared spectrum making the event a spectral
+            sensor. We characterise chromatic aberration effects,
+            using both event-based and conventional frame-based
+            sensors, validating the effectiveness of bio-inspired
+            spectral discrimination both in simulation and in a real
+            setup as well as assessing the spectral discrimination
+            performance. Our proposed approach provides a robust
+            spectral sensing capability without conventional colour
+            filters or computational demosaicing. This approach
+            opens new pathways toward new spectral sensing sys-
+            tems inspired by nature’s evolutionary solutions          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">The optical setup: A ball lens and an EVK4 event camera</h2>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- GIF Column -->
+        <div class="column is-half">
+          <div class="responsive-container">
+            <img src="static/videos/octoeye_video.gif" alt="Optical setup GIF">
+          </div>
+        </div>
+        <!-- Image Column -->
+        <div class="column is-half">
+          <div class="responsive-container">
+            <img src="static/images/optical_setup_all_views.png" alt="Optical setup image">
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End optical setup GIF and image -->
 
 
-<!-- Video carousel -->
+<!-- Focus on any wavelength from 400 nm to 1000 nm with 50 nm interval -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <!-- Section Title -->
+      <h2 class="title is-3">Change focus points on wavelengths from 400 nm to 1000 nm with 50 nm interval</h2>
+      
+      <!-- Progress Bar and Image Viewer -->
+      <div class="progress-viewer" style="margin-bottom: 20px;">
+        <input type="range" id="progressSlider" min="1" max="13" step="1" value="1" style="width: 100%;">
+        <img id="progressImage" src="static/images/focus_point_01.png" alt="Focus point 1 image" style="width: 100%; margin-top: 10px;">
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End of section -->
+
+<!-- JavaScript to update image based on slider value -->
+<script>
+  const slider = document.getElementById('progressSlider');
+  const image = document.getElementById('progressImage');
+
+  slider.addEventListener('input', function() {
+    const value = parseInt(slider.value, 10);
+    // Pad the value to two digits (e.g. 1 becomes "01")
+    const paddedValue = value < 10 ? '0' + value : value;
+    image.src = `static/images/focus_point_${paddedValue}.png`;
+    image.alt = `Focus point ${value} image`;
+  });
+</script>
+
+
+
+
+<!-- Color Focus Section with Reference Image, Pattern Navigation, and Image Labels -->
+<section class="color-focus-section">
+  <div class="container" style="text-align: center; margin-top: 40px;">
+    <h2 class="title is-3">RGB Colour-from-Focus (Uncontrolled environment)</h2>
+    <div class="button-group" style="margin-bottom: 20px;">
+      <button id="redFocusBtn" class="color-btn">Red Focus</button>
+      <button id="greenFocusBtn" class="color-btn">Green Focus</button>
+      <button id="blueFocusBtn" class="color-btn">Blue Focus</button>
+    </div>
+    
+    <!-- Flex container to hold the reference image (left) and the dynamic image (right) -->
+    <div class="color-image-viewer" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+      <!-- Fixed reference image with label -->
+      <div class="ref-image-container">
+        <figure style="margin:0;">
+          <img id="refImage" src="static/images/pattern1_ref_image.png" alt="Reference Image">
+          <figcaption style="margin-top: 5px; font-size: 0.9rem;">Reference frame</figcaption>
+        </figure>
+      </div>
+      <!-- Dynamic image that updates based on button and pattern clicks with label -->
+      <div class="dynamic-image-container">
+        <figure style="margin:0;">
+          <img id="colorFocusImage" src="static/images/pattern1_red.png" alt="Red Focus">
+          <figcaption style="margin-top: 5px; font-size: 0.9rem;">Event data (Colour-coded)</figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    <!-- Pattern Navigation Buttons -->
+    <div class="pattern-navigation" style="margin-top: 20px; text-align: center;">
+      <button id="prevPatternBtn" class="pattern-btn">Previous Pattern</button>
+      <button id="nextPatternBtn" class="pattern-btn">Next Pattern</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Button Styles */
+  .color-btn, .pattern-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Color buttons */
+  #redFocusBtn {
+    background: linear-gradient(45deg, #FF4E50, #cc8484);
+    box-shadow: 0 4px 8px rgba(255, 78, 80, 0.4);
+  }
+  #greenFocusBtn {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+    box-shadow: 0 4px 8px rgba(86, 171, 47, 0.4);
+  }
+  #blueFocusBtn {
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+    box-shadow: 0 4px 8px rgba(33, 147, 176, 0.4);
+  }
+  
+  /* Pattern navigation buttons */
+  #prevPatternBtn, #nextPatternBtn {
+    background: linear-gradient(45deg, #555, #888);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .color-btn:hover, .pattern-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  .color-btn:active, .pattern-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Ensure both images have the same size and a thin black border */
+  .ref-image-container img,
+  .dynamic-image-container img {
+    width: 700px;       /* Fixed width */
+    height: 400px;      /* Fixed height */
+    object-fit: cover;  /* Maintains aspect ratio by cropping as needed */
+    border: 1px solid black; /* Thin black border */
+  }
+</style>
+
+<script>
+  // State variables to track current pattern number and color.
+  let currentPattern = 1;
+  let currentColor = 'red';
+  const maxPattern = 5; // Maximum pattern number.
+
+  // Cache DOM elements.
+  const redFocusBtn = document.getElementById('redFocusBtn');
+  const greenFocusBtn = document.getElementById('greenFocusBtn');
+  const blueFocusBtn = document.getElementById('blueFocusBtn');
+  const prevPatternBtn = document.getElementById('prevPatternBtn');
+  const nextPatternBtn = document.getElementById('nextPatternBtn');
+  const colorFocusImage = document.getElementById('colorFocusImage');
+  const refImage = document.getElementById('refImage');
+
+  // Utility function to update both images based on current pattern and color.
+  function updateImages() {
+    // Update the dynamic image (Event data).
+    const capitalColor = currentColor.charAt(0).toUpperCase() + currentColor.slice(1);
+    colorFocusImage.src = `static/images/pattern${currentPattern}_${currentColor}.png`;
+    colorFocusImage.alt = `${capitalColor} Focus Pattern ${currentPattern}`;
+    
+    // Update the reference image.
+    refImage.src = `static/images/pattern${currentPattern}_ref_image.png`;
+    refImage.alt = `Reference frame Pattern ${currentPattern}`;
+  }
+
+  // Color button events.
+  redFocusBtn.addEventListener('click', () => {
+    currentColor = 'red';
+    updateImages();
+  });
+
+  greenFocusBtn.addEventListener('click', () => {
+    currentColor = 'green';
+    updateImages();
+  });
+
+  blueFocusBtn.addEventListener('click', () => {
+    currentColor = 'blue';
+    updateImages();
+  });
+
+  // Pattern navigation button events.
+  prevPatternBtn.addEventListener('click', () => {
+    // Decrement pattern number if greater than 1.
+    if (currentPattern > 1) {
+      currentPattern--;
+      updateImages();
+    }
+  });
+
+  nextPatternBtn.addEventListener('click', () => {
+    // Increment pattern number if less than maxPattern.
+    if (currentPattern < maxPattern) {
+      currentPattern++;
+      updateImages();
+    }
+  });
+</script>
+
+
+<br><br>
+<section class="video-reference-section" style="text-align: center; margin-top: 20px;">
+  <h2 class="title is-3">Colour-from-focus video from an EVK4</h2>
+  
+  <!-- Wrapper to control overall width -->
+  <div style="max-width: 1500px; margin: 0 auto;">
+    <div class="video-reference-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      
+      <!-- Left: Reference frame with caption -->
+      <figure style="flex: 1; max-width: 45%;">
+        <div class="reference-container" style="aspect-ratio: 16/9; position: relative; overflow: hidden; background: #000;">
+          <img src="static/images/pattern9_input.png" alt="Reference Frame" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <figcaption style="margin-top: 5px; font-size: 1rem; text-align: center;">Reference frame</figcaption>
+      </figure>
+      
+      <!-- Right: YouTube video with caption -->
+      <figure style="flex: 1; max-width: 45%;">
+        <div class="video-container" style="aspect-ratio: 16/9; position: relative; background: #000;">
+          <iframe 
+            src="https://www.youtube.com/embed/Nf0XO-ZFyjI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+
+        </div>
+        <figcaption style="margin-top: 5px; font-size: 1rem; text-align: center;">Events data</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
 
 
 
@@ -260,7 +441,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +451,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +459,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>BibTex coming soon</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->

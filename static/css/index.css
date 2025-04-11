@@ -17,7 +17,21 @@ body {
   font-variant: small-caps;
 }
 
-
+.responsive-container {
+  position: relative;
+  padding-bottom: 120%; /* 16:9 ratio; adjust as needed */
+  height: 0;
+  overflow: hidden;
+}
+.responsive-container video,
+.responsive-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use "contain" if you don't want cropping */
+}
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
